@@ -1,0 +1,78 @@
+.container {
+    width: 80%;
+    margin: auto;
+    background-color: rgba(253, 253, 253, 1);
+    height: 80%;
+    
+    box-shadow: 4px 5px 15px 2px rgba(199, 197, 197, 0.62);
+    overflow:hidden;
+        padding-bottom: 31px;
+}
+
+h1 {
+       margin: 0px;
+    padding: 20px;
+    background-color: #827a7a;
+    text-transform: uppercase;
+    color: #d8d8d8;
+}
+
+body {
+    background-color: rgba(236, 236, 220, 1);
+    font-size:20px;
+    color: rgba(5, 5, 23, 1);
+    font-family: 'Roboto', sans-serif;
+        margin-top: 20px;
+}
+input[type="text"] {
+     font-size: 20px;
+    outline: none;
+    border: 2px solid rgb(208, 208, 208);
+    border-radius: 10px;
+    padding: 5px;
+    padding-left: 20px;
+    font-weight: 600;
+    transition: border 0.3s;
+    color: rgb(47, 45, 142);
+}
+input[type="text"]:focus {
+    border: 2px solid #827a7a;
+}
+
+ input[type="text"]::-webkit-input-placeholder {
+    color: #ccc;
+   } 
+   input[type="text"]::-moz-placeholder {
+    color: #ccc;
+   }
+.answer-form {
+    background-color: #f3f3f3;
+    text-align: center;
+}
+
+.answer-form__question {
+    margin: 20px;
+    display: inline-block;
+}
+
+.answer-form__input {
+    margin: 20px;
+       width: 88px;
+}
+
+.result__el {
+    /* width: 100%; */
+    border: 2px dashed #c1bfbf;
+    height: 42px;
+    margin: 20px;
+}
+.result {
+    height: inherit;
+    overflow: auto;
+    }
+  
+@media only screen  and (max-width:700px){
+.container {
+    width: 95%;
+}
+}

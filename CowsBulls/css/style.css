@@ -65,12 +65,41 @@ input[type="text"]:focus {
     border: 2px dashed #c1bfbf;
     height: 42px;
     margin: 20px;
+    line-height: 42px;
 }
 .result {
     height: inherit;
     overflow: auto;
     }
   
+.result__cow, .result__bull {
+
+    width: 42px;
+    display: inline-block;
+    background-size: 80%;
+    float: right;
+    background-position: 7px 4px;
+    height: 42px;
+    top: 20px;
+    /* margin: auto; */
+    background-repeat: no-repeat;
+}
+.result__cow{
+    background-image: url("../img/cow.png");
+}
+.result__bull{
+    background-image: url("../img/bull.png");
+}
+.result__el span {
+    /* margin: 10px; */
+    /* margin-right: 10px; */
+    margin: 0 10px;
+}
+
+span.result__num {
+    /* line-height: 84px; */
+    display: inline-block;
+}
 @media only screen  and (max-width:700px){
 .container {
     width: 95%;

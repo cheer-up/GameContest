@@ -9,6 +9,7 @@
     padding-bottom: 31px;
     display: flex;
     max-height: 750px;
+      min-height: 350px;
     flex-direction: column;
 }
 

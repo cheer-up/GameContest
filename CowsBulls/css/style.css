@@ -3,10 +3,12 @@
     margin: auto;
     background-color: rgba(253, 253, 253, 1);
     height: 80%;
-    
+    max-width: 700px;
     box-shadow: 4px 5px 15px 2px rgba(199, 197, 197, 0.62);
     overflow:hidden;
-        padding-bottom: 31px;
+    padding-bottom: 31px;
+    display: flex;
+    flex-direction: column;
 }
 
 h1 {
@@ -70,6 +72,7 @@ input[type="text"]:focus {
 .result {
     height: inherit;
     overflow: auto;
+    /* flex-grow: 1; */
     }
   
 .result__cow, .result__bull {
@@ -93,7 +96,7 @@ input[type="text"]:focus {
 .result__el span {
     /* margin: 10px; */
     /* margin-right: 10px; */
-    margin: 0 10px;
+    margin-left: 7px;
 }
 
 span.result__num {

@@ -160,6 +160,7 @@ input[type="number"]::-moz-placeholder {
     overflow: auto;
     position: relative;
     /* flex-grow: 1; */
+    font-size: 16px;
 }
 
 .result__cow,

@@ -3,7 +3,8 @@ var UIContoller = (function() {
         input: ".answer-form__input",
         resultContainer: ".result",
         resultElement: ".result__el",
-        rules: ".rules"
+        rules: ".rules",
+        form: ".answer-form__form"
     }
     return {
         getDOMstrings: function() {
@@ -44,12 +45,19 @@ var controller = (function(UICtrl) {
     var setupEventListeners = function() {
         var DOM = UICtrl.getDOMstrings();
 
-        document.querySelector(DOM.input).addEventListener('keypress', function(event) {
+        /*document.querySelector(DOM.input).addEventListener('keypress', function(event) {
             if (event.keyCode === 13 || event.which === 13) {
                 UICtrl.hideRules();
                 checkAnswer();
             }
+        });*/
+        document.querySelector(DOM.form).addEventListener('submit', function(event) {
+            event.preventDefault();
+            UICtrl.hideRules();
+            checkAnswer();
+
         });
+
         document.querySelector(DOM.rules).addEventListener('click', function() {
             document.querySelector(DOM.rules).classList.toggle("rules-hide");
         })

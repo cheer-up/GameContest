@@ -21,6 +21,21 @@ h1 {
     color: #d8d8d8;
 }
 
+.popup {
+    position: fixed;
+    /* top: 10%; */
+    width: 300px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    display: block;
+    bottom: 0;
+    top: 0;
+    height: 300px;
+    z-index: 100;
+    background-color: #f3f3f3;
+}
+
 body {
     background-color: rgba(236, 236, 220, 1);
     font-size: 20px;

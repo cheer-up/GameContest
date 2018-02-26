@@ -1,3 +1,3 @@
 # Game Contest
 
-Cows And Bulls https://cheer-up.github.io/GameContest/CowsBulls/index.html
+Cows And Bulls https://ivkusto.github.io/GameContest/CowsBulls/index.html
